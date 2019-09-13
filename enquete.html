@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Bus</title>
+    <link rel="shortcut icon" type="image/png" href="favicon2.png"/>
+    <link rel="stylesheet" href="source/estilo.css" type="text/css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-dark fixed-top">
+        <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="nav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-light font-weight-bold px-3" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light font-weight-bold px-3" href="equipamentos.html">EQUIPAMENTOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light font-weight-bold px-3" href="pesquisa.html" target="_blank">PESQUISA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light font-weight-bold px-3" href="#">ENQUETE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light font-weight-bold px-3" href="cultura.html" target="_blank">CULTURA</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h1>Um minutinho da sua atenção!</h1>
+    <h3>Eu gostaria de saber sua opinião sobre isso =^-^=</h3>
+    <h4>Primeiro, qual seria seu nome se você fosse uma empresa de ônibus?</h4>
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <input type="text" class="form-control" placeholder="Ex.: Nossa Senhora">
+            </div>
+            <div class="form-group col-md-4">
+                <input type="text" class="form-control" placeholder="das Graças">
+            </div>
+        </div>
+        <h4>Ok, com sinceridade, quantos ônibus você conhece o trajeto de cabo a rabo (<i>ou quase isso</i>)?</h4>
+        <fieldset class="form-group">
+            <div class="row">
+                <legend class="col-form-label col-sm-2 pt-0">Tens o que é preciso para não ser leite com pêra?</legend>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="opcao1" checked>
+                        <label class="form-check-label" for="gridRadios1">
+                            Entre 1 e 3
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="opcao2">
+                        <label class="form-check-label" for="gridRadios2">
+                            Entre 3 e 5
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="opcao2">
+                        <label class="form-check-label" for="gridRadios3">
+                            Entre 5 e 8
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="opcao2">
+                        <label class="form-check-label" for="gridRadios4">
+                            Entre 8 e 10
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios5" value="opcao2">
+                        <label class="form-check-label" for="gridRadios5">
+                            Mais de 10
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <h4>Agora, me diga o quão privilegiado você é:</h4>
+        <select class="custom-select">
+            <option selected>Selecione quantas opções de ônibus você pode utilizar para ir à faculdade</option>
+            <option value="1">1 - 2</option>
+            <option value="2">2 - 3</option>
+            <option value="3">Mais que 3</option>
+        </select>
+        <h4>Você já passou por essa situação?</h4>
+        <img src="source/img/metro.jpg" alt="Metrô lotado">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="radioPrivilegio" id="radioPrivilegioS" value="opcao1" checked>
+            <label class="form-check-label" for="radioPrivilegioS">
+                Sim, #sofro
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="radioPrivilegio" id="radioPrivilegioN" value="opcao1" checked>
+            <label class="form-check-label" for="radioPrivilegioN">
+                Não, tenho carro/não ando de metrô
+            </label>
+        </div>
+
+        <h4>Você já viu um Pégaso pegando fogo?</h4>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+                Já vi
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="opcao2">
+            <label class="form-check-label" for="exampleRadios2">
+                Nunca vi
+            </label>
+        </div>
+        <h4>Em ordem de pioridade, pra você, escolha os 3 mais importantes para você:</h4>
+        <ol type="1">
+            <li>Ar-condicionado (<i>ei, safadinh@, não pense só no verão</i>)</li>
+            <li>Itinerário</li>
+            <li>Bancos confortáveis</li>
+            <li>Tamanho do ônibus</li>
+            <li>Frequência que passa no ponto</li>
+            <li>Estado de conservação</li>
+            <li>Modelo do ônibus</li>
+            <li>Suspensão do ônibus</li>
+        </ol>
+        <div class="form-row align-items-center">
+            <div class="col-auto my-1">
+                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect1">Ordene</label>
+                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect1">
+                    <option selected>Escolher...</option>
+                    <option value="1">Um</option>
+                    <option value="2">Dois</option>
+                    <option value="3">Três</option>
+                    <option value="3">Quatro</option>
+                    <option value="3">Cinco</option>
+                    <option value="3">Seis</option>
+                    <option value="3">Sete</option>
+                    <option value="3">Oito</option>
+                </select>
+            </div>
+            <div class="form-row align-items-center">
+                <div class="col-auto my-1">
+                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect2">Ordene</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect2">
+                        <option selected>Escolher...</option>
+                        <option value="1">Um</option>
+                        <option value="2">Dois</option>
+                        <option value="3">Três</option>
+                        <option value="3">Quatro</option>
+                        <option value="3">Cinco</option>
+                        <option value="3">Seis</option>
+                        <option value="3">Sete</option>
+                        <option value="3">Oito</option>
+                    </select>
+                </div>
+                <div class="form-row align-items-center">
+                    <div class="col-auto my-1">
+                        <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect3">Ordene</label>
+                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect3">
+                            <option selected>Escolher...</option>
+                            <option value="1">Um</option>
+                            <option value="2">Dois</option>
+                            <option value="3">Três</option>
+                            <option value="3">Quatro</option>
+                            <option value="3">Cinco</option>
+                            <option value="3">Seis</option>
+                            <option value="3">Sete</option>
+                            <option value="3">Oito</option>
+                        </select>
+                    </div>
+
+            </div>
+            <div class="col-auto my-1">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </div>
+        <h4>Você sabia que no Rio de Janeiro não existe TREM?</h4>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="tremsim" value="opcao1" checked>
+            <label class="form-check-label" for="tremsim">
+                Claro que sim!
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="tremnao" value="opcao1" checked>
+            <label class="form-check-label" for="tremnao">
+                Óbvio que não, sou cria da Supervia
+            </label>
+        </div>
+            <img src="source/img/quem.jpg" alt="assento">
+            <h4>Nessa situação, qual a opção certa?</h4>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="levanta1" value="opcao1" checked>
+            <label class="form-check-label" for="levanta1">
+                "Geral levanta e deixa o assento vazio mesmo"
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="levanta2" value="opcao1" checked>
+            <label class="form-check-label" for="levanta2">
+                "Levanta e pede pro loirinho do lado fazer o mesmo"
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="levanta3" value="opcao1" checked>
+            <label class="form-check-label" for="levanta3">
+                "Levanto e deixo as três disputar o lugar no tapa"
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="levanta4" value="opcao1" checked>
+            <label class="form-check-label" for="levanta4">
+                "Três pessoas levantam e essas três sentam. Pronto."
+            </label>
+        </div>
+
+    </form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
