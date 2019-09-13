@@ -73,13 +73,13 @@ h4{
 }
 form{
     font-family: "Montserrat Light";
+    margin: auto;
+    width: 50% !important;
 }
 .responsive{
+    display: block;
 }
 
-.table,#ps{
-    margin: 10px;
-}
 h2{
     text-align: center;
     margin: 100px;
@@ -107,3 +107,67 @@ a:hover{
     padding:10px;
 }
 
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #aea9ae;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-family: "Montserrat Light";
+    font-size: 14px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.table,#ps {
+    margin: auto;
+    width: 50% !important;
+}
+#ps{
+    text-align: center;
+}
+.form-check{
+    display: block;
+}
+
+.btn-primary{
+    margin: auto;
+}
