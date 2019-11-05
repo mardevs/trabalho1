@@ -1,78 +1,110 @@
-@font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    src: url('fonts/montserrat-v14-latin-regular.eot'); /* IE9 Compat Modes */
-    src: local('Montserrat Regular'), local('Montserrat-Regular'),
-    url('fonts/montserrat-v14-latin-regular.woff') format('woff')
-}
-@font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    src: url('fonts/montserrat-v14-latin-500.eot'); /* IE9 Compat Modes */
-    src: local('Montserrat Medium'), local('Montserrat-Medium'),
-    url('fonts/montserrat-v14-latin-500.woff') format('woff')
-}
-
 .homepage{
     background-image: url('img/fundo.jpg');
     background-repeat: no-repeat;
-    background-size:100%;
     bottom: 0;
-    color: black;
-    left: 0;
-    overflow: auto;
-    padding: 3em;
-    position: absolute;
-    right: 0;
-    text-align: center;
     top: 0;
+    left: 0;
+    right: 0;
+    color: black;
+    overflow: auto;
+    text-align: center;
     background-size: cover;
+    position: absolute;
+    margin-bottom: 100px;
 }
+
+#eqp,#enq,#cult{
+    color: black;
+    position: absolute;
+    text-align: center;
+    margin-bottom: 20%;
+}
+
+@media only screen and (max-width: 300px){
+    #eqp,#enq,#cult{
+        margin-bottom: 40%;
+    }
+    .homepage{
+        margin-bottom: 40%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    #eqp,#enq,#cult{
+        margin-bottom: 40%;
+    }
+    .homepage{
+        margin-bottom: 40%;
+    }
+}
+
 .destaque{
     color: #7d8b71;
     font-size: 30px;
 }
 #nav{
-    font-family: "Montserrat Medium";
+    font-family: "Montserrat", medium;
     font-size: 20px;
     padding: 5px 5px;
     margin: 10px;
 }
 
-
 h1{
     top: 120px;
     text-align: center;
     margin: 150px;
-    font-family: "Montserrat Light";
+    font-family: "Montserrat", light;
 }
+
+h1#equipamentos:hover{
+    background: #222222;
+    color: white;
+}
+
+h1#pesquisa:hover{
+    visibility: hidden;
+}
+
+h1#cultura:hover{
+    border: 3px solid #bee5eb;
+    padding: 5px;
+}
+
+h1#enqt:hover{
+    color: deeppink;
+    text-shadow: 2px 1px 2px #600636;
+}
+
 
 h3{
 
     text-align: center;
     margin: 100px;
-    font-family: "Montserrat Light";
+    font-family: "Montserrat", light;
 }
 
 #princ{
     top: 220px;
     text-align: center;
     margin: 100px;
-    font-family: "Montserrat SemiBold";
+    font-family: "Montserrat", semi-condensed;
     font-size: 26px;
     display: block;
     color: #ffc4b1;
 }
 
+p#princ::first-letter{
+    font-size: 60px;
+}
+
+
 h4{
     text-align: center;
     margin: 100px;
-    font-family: "Montserrat Medium";
+    font-family: "Montserrat", medium;
 }
 form{
-    font-family: "Montserrat Light";
+    font-family: "Montserrat", light;
     margin: auto;
     width: 50% !important;
 }
@@ -83,7 +115,7 @@ form{
 h2{
     text-align: center;
     margin: 100px;
-    font-family: "Montserrat Medium";
+    font-family: "Montserrat", medium;
 }
 .pesquisa{
     color:white;
@@ -91,15 +123,17 @@ h2{
 
 a:link, a:visited, a:active, a:hover{
     text-decoration: none;
-    font-family: "Montserrat Medium";
+    font-family: "Montserrat", medium;
 }
 a:link, a:visited{
     color: white;
 }
+
 a:hover{
      color: darksalmon;
  }
-#musica{
+
+#musica,#call{
     margin-top: 50px;
     text-align: center;
     display: block;
@@ -121,14 +155,16 @@ div.gallery img {
     height: auto;
 }
 
-div.desc {
+figcaption.desc {
     padding: 15px;
     text-align: center;
-    font-family: "Montserrat Light";
+    font-family: "Montserrat", light;
     font-size: 14px;
 }
 
-* {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
 
@@ -157,10 +193,7 @@ div.desc {
     clear: both;
 }
 
-.table,#ps {
-    margin: auto;
-    width: 50% !important;
-}
+
 #ps{
     text-align: center;
 }
@@ -171,3 +204,53 @@ div.desc {
 .btn-primary{
     margin: auto;
 }
+
+.links{
+    display: block;
+    text-align: justify;
+}
+
+.footer{
+    background-color: #ffa480;
+    padding: 10px;
+    box-shadow: 0 -1px 5px #684334;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    clear:both;
+    position: fixed;
+}
+
+.footer a{
+    color: #222;
+}
+
+.footer a:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+.social:hover {
+    -webkit-transform: scale(1.0);
+    -webkit-transition-duration: 0.5s;
+}
+.social {
+    -webkit-transform: scale(0.8);
+    color: #222;
+    padding-left: 10px;
+    display: block;
+}
+
+.table,#ps {
+    margin: auto;
+    width: 50% !important;
+}
+
+#monstro{
+    padding: 5px;
+    border: 2px dotted #ffa480;
+    border-radius: 5px;
+    margin: 5px 10px;
+    display: block;
+}
+
